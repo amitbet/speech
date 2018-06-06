@@ -1,1 +1,1 @@
-docker build .\eng-docker -t kaldi-eng
+docker build --no-cache .\eng-docker -t kaldi-eng

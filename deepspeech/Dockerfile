@@ -10,6 +10,8 @@ RUN wget https://github.com/mozilla/DeepSpeech/releases/download/v0.1.1/deepspee
 RUN pip install deepspeech
 RUN pip install deepspeech-server
 
+COPY ./models models
+
 # to run deepspeech:
 # CMD deepspeech ./models/output_graph.pb ./audio/8455-210777-0068.wav ./models/alphabet.txt
 
